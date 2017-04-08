@@ -1,0 +1,27 @@
+{
+  "name": "node-github-trending",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reyhan Sofian <computecoholic@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "commander": "^2.9.0",
+    "html-entities": "^1.2.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0",
+    "striptags": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.1",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.3"
+  }
+}
