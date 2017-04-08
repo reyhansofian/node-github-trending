@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reyhansofian/node-github-trending.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +17,10 @@
   "license": "ISC",
   "dependencies": {
     "cheerio": "^0.22.0",
-    "commander": "^2.9.0",
     "html-entities": "^1.2.0",
     "request": "^2.81.0",
     "request-promise": "^4.2.0",
+    "semver": "^5.3.0",
     "striptags": "^3.0.1"
   },
   "devDependencies": {

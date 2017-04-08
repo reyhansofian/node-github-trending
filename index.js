@@ -1,5 +1,7 @@
 const Crawler = require('./Crawler');
 
-const client = new Crawler();
+const Client = new Crawler();
 
-client.fetch();
+module.exports = {
+  Client,
+};

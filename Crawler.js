@@ -2,9 +2,18 @@ const cheerio = require('cheerio');
 const requestPromise = require('request-promise');
 const striptags = require('striptags');
 const html = require('html-entities').AllHtmlEntities;
+const semver = require('semver');
+const { engines } = require('./package');
+
+const version = engines.node;
 
 class Crawler {
   constructor() {
+    if (!semver.satisfies(process.version, version)) {
+      console.error(`Required node version ${version} not satisfied with current version ${process.version}.`);
+      process.exit(1);
+    }
+
     this.baseUrl = 'https://github.com';
   }
 
@@ -70,6 +79,8 @@ class Crawler {
             },
           });
         });
+
+        return repoData;
       });
   }
 }
