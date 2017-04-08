@@ -1,6 +1,4 @@
-const Crawler = require('./Crawler');
-
-const Client = new Crawler();
+const Client = require('./Client');
 
 module.exports = {
   Client,
