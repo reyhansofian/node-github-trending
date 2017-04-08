@@ -46,7 +46,7 @@ class Crawler {
   }
 
   fetch(language = '') {
-    let uri = `/trending/${language}`;
+    let uri = '/trending';
 
     if (language) {
       uri += `/${Crawler.normalizeLanguage(String(language).toLocaleLowerCase())}`;
